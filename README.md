@@ -133,21 +133,11 @@ Se o tipo do ataque for eficaz contra o tipo do inimigo, o dano é multiplicado 
 
 ---
 
-## Possíveis Expansões
-
-- Interface gráfica (Tkinter, PyGame)
-- Tipos mais complexos (gelo, veneno, psíquico)
-- Efeitos de status (paralisia, veneno, etc.)
-- Vários rounds ou torneios
-- Leitura de personagens e habilidades a partir de arquivos `.json`
-
----
-
 ## Autoria
 
 Projeto desenvolvido para avaliação parcial 2 da matéria "Programação Orientada a Maquinas Virtuais".
 
 > Equipe = ["Matheus Costa"]  
 > Disciplina = ["Programação Orientada a Maquinas Virtuais"]
-> Professor = ["Prof. Fabio de Sousa Cardoso"]  
+> Professor = ["Fabio de Sousa Cardoso"]  
 > Instituição = ["UEA - EST"]

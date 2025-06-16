@@ -2,29 +2,45 @@
 
 class Habilidade {
   - nome: str
-  - dano: int
-  + usar(): int
+  - tipo: str
+  - dano_base: int
+  + __init__(nome: str, tipo: str, dano_base: int)
+  + usar(): tuple[int, bool]
 }
 
 class Personagem {
   - nome: str
+  - tipo: str
   - vida: int
   - habilidades: list[Habilidade]
-  + atacar(): Habilidade
-  + receber_dano(valor: int): None
+  + __init__(nome: str, tipo: str, vida: int, habilidades: list[Habilidade])
+  + atacar(): Habilidade  // Nota: Implementação atual retorna self.habilidades[0]
+  + receber_dano(dano: int): void
   + esta_vivo(): bool
+  + escolher_ataque(): Habilidade // Método abstrato ou a ser sobrescrito
 }
 
-class Jogador {
+class Jogador extends Personagem {
+  + __init__(nome: str, tipo: str, vida: int, habilidades: list[Habilidade])
   + escolher_ataque(): Habilidade
 }
 
-class Inimigo {
+class Inimigo extends Personagem {
+  + __init__(nome: str, tipo: str, vida: int, habilidades: list[Habilidade])
   + escolher_ataque(): Habilidade
 }
 
-Personagem <|-- Jogador
-Personagem <|-- Inimigo
-Personagem o-- Habilidade
+package engine {
+  class Batalha {
+    + {static} iniciar_batalha(jogador: Jogador, inimigo: Inimigo): void
+    + {static} limpar_tela(): void
+    - {static} FRAQUEZAS: dict
+  }
+}
+
+Personagem "1" *-- "1..*" Habilidade : possui >
+Batalha ..> Jogador : usa >
+Batalha ..> Inimigo : usa >
+Batalha ..> Habilidade : usa >
 
 @enduml
