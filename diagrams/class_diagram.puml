@@ -1,0 +1,30 @@
+@startuml
+
+class Habilidade {
+  - nome: str
+  - dano: int
+  + usar(): int
+}
+
+class Personagem {
+  - nome: str
+  - vida: int
+  - habilidades: list[Habilidade]
+  + atacar(): Habilidade
+  + receber_dano(valor: int): None
+  + esta_vivo(): bool
+}
+
+class Jogador {
+  + escolher_ataque(): Habilidade
+}
+
+class Inimigo {
+  + escolher_ataque(): Habilidade
+}
+
+Personagem <|-- Jogador
+Personagem <|-- Inimigo
+Personagem o-- Habilidade
+
+@enduml
