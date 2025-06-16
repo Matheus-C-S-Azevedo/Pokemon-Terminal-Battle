@@ -1,10 +1,10 @@
-# 🔥 Pokémon Battle Terminal Game (Python OOP)
+# Pokémon Battle Terminal Game (Python OOP)
 
 Um projeto educacional de jogo de batalha por turnos inspirado em Pokémon, implementado em Python com foco em **Programação Orientada a Objetos (POO)**. Feito para rodar diretamente no terminal com saída colorida e dinâmica!
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Demonstrar o uso prático dos principais conceitos de POO:
 - Herança
@@ -15,7 +15,7 @@ Demonstrar o uso prático dos principais conceitos de POO:
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 trabalho_OOP/
@@ -32,7 +32,7 @@ trabalho_OOP/
 
 ---
 
-## 🧩 Classes e Componentes
+## Classes e Componentes
 
 ### `Habilidade`
 ```python
@@ -83,7 +83,7 @@ Usa uma **tabela de fraquezas** para aplicar bônus de dano (x1.5) se o tipo do 
 
 ---
 
-## 💡 Exemplo de Execução
+## Exemplo de Execução
 
 ```
 python3 main.py
@@ -108,7 +108,7 @@ Charmander tentou usar Brasa, mas errou o ataque!
 
 ---
 
-## 🧪 Tipos e Fraquezas
+## Tipos e Fraquezas
 
 ```python
 FRAQUEZAS = {
@@ -125,7 +125,7 @@ Se o tipo do ataque for eficaz contra o tipo do inimigo, o dano é multiplicado 
 
 ---
 
-## 📌 Tecnologias Usadas
+## Tecnologias Usadas
 
 - Python 3.10+
 - [colorama](https://pypi.org/project/colorama/) para terminal colorido
@@ -133,7 +133,7 @@ Se o tipo do ataque for eficaz contra o tipo do inimigo, o dano é multiplicado 
 
 ---
 
-## 📚 Possíveis Expansões
+## Possíveis Expansões
 
 - Interface gráfica (Tkinter, PyGame)
 - Tipos mais complexos (gelo, veneno, psíquico)
@@ -143,11 +143,11 @@ Se o tipo do ataque for eficaz contra o tipo do inimigo, o dano é multiplicado 
 
 ---
 
-## 👨‍🏫 Autoria
+## Autoria
 
-Projeto desenvolvido para avaliação de conceitos de Programação Orientada a Objetos.
+Projeto desenvolvido para avaliação parcial 2 da matéria "Programação Orientada a Maquinas Virtuais".
 
-> Equipe: [Nomes dos integrantes]  
-> Disciplina: Programação Orientada a Objetos  
-> Professor: [Nome do professor]  
-> Instituição: [Nome da instituição]
+> Equipe = ["Matheus Costa"]  
+> Disciplina = ["Programação Orientada a Maquinas Virtuais"]
+> Professor = ["Prof. Fabio de Sousa Cardoso"]  
+> Instituição = ["UEA - EST"]
