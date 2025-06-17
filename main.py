@@ -20,13 +20,13 @@ def main():
     # endregion
 
     # region: Pokemons
-    bulbasaur = Inimigo("Bulbasaur", "planta", 95, [chicote_de_vinha, po_venenoso])
-    squirtle = Inimigo("Squirtle", "agua", 100, [pistola_agua, giro_rapido])
+    bulbasaur = Inimigo("Bulbasaur", "planta", 90, [chicote_de_vinha, po_venenoso])
+    squirtle = Inimigo("Squirtle", "agua", 95, [pistola_agua, giro_rapido])
     pikachu = Jogador("Pikachu", "eletrico", 100, [choque_do_trovao, investida])
-    charmander = Inimigo("Charmander", "fogo", 100, [arranhao, brasa])
+    charmander = Jogador("Charmander", "fogo", 100, [arranhao, brasa])
     # endregion
 
-    iniciar_batalha(pikachu, bulbasaur)
+    iniciar_batalha(pikachu, charmander)
 
 if __name__ == "__main__":
     main()
